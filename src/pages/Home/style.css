@@ -1,0 +1,42 @@
+.HomeContainer {
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.RecipeBody {
+    width: 60%;
+    margin: auto;
+}
+
+.RecipeCategories {
+    margin-top: 20px;
+    text-align: right;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.RecipeList {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.RecipeListEmpty {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .RecipeBody {
+        width: 90%;
+    }
+
+    .RecipeCategories {
+        margin-top: 12px;
+        font-size: 1.3rem;
+    }
+}

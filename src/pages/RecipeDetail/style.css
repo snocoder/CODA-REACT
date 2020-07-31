@@ -1,0 +1,181 @@
+.RecipeDetail {
+    width: 60%;
+    margin: auto;
+}
+
+.RecipeDetailBack {
+    color: #444;
+    margin-top: 15px;
+}
+
+.RecipeDetailBack img {
+    vertical-align: middle;
+}
+
+.RecipeDetailContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.RecipeDetailContainerLeft {
+    width: 40%;
+}
+
+.RecipeDetailContainerLeftImage {
+    background-size: 100% 100%;
+    height: 200px;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.RecipeDetailContainerLeftImageBlack {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.RecipeDetailContainerLeftIngredientsHeader {
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.RecipeDetailContainerLeftIngredientsDescription {
+    margin-top: 15px;
+    font-size: 0.77rem;
+}
+
+.RecipeDetailContainerRight {
+    width: 40%;
+}
+
+.RecipeDetailContainerRightName {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.RecipeDetailContainerRightRating {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.Rating {
+    background-color: #000;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.8rem;
+    margin-right: 10px;
+}
+
+.RecipeDetailContainerRightRating img {
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.RecipeDetailContainerRightDescriptionHeader {
+    margin-top: 15px;
+    font-size: 0.7rem;
+    text-align: right;
+}
+
+.RecipeDetailContainerRightDescriptionDescription {
+    margin-top: 15px;
+    font-size: 0.77rem;
+    text-align: right;
+}
+
+.RecipeDetailContainerRightList {
+    text-align: right;
+    margin-top: 25px;
+}
+
+.RecipeDetailContainerRightListItem {
+    display: inline-block;
+    margin-right: 15px;
+    width: 55px;
+    height: 55px;
+    background-color: #000;
+    border-radius: 50% 50% 50% 50%;
+    color: #fff;
+    text-align: center;
+}
+
+.RecipeDetailContainerRightListItemNumber {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.RecipeDetailContainerRightListItemText {
+    font-size: 0.45rem;
+    margin-top: 3px;
+}
+
+.RecipeDetailContainerRightFav {
+    margin-top: 25px;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.RecipeDetailContainerRightFav img {
+    vertical-align: middle;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.CommentHeader {
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.commentBox {
+    margin-top: 15px;
+}
+
+.commentBox textarea {
+    outline: none;
+    box-shadow: none;
+    height: auto;
+    padding: 7px 10px;
+    width: 93%;
+    line-height: 1.5;
+    font-size: 1rem;
+    background-color: #fff;
+    border-radius: 7px;
+    border: none;
+}
+
+.AddComment {
+    background-color: #000;
+    color: #fff;
+    border-radius: 7px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 10px 0;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .RecipeDetail {
+        width: 90%;
+    }
+
+    .RecipeDetailContainerLeft {
+        width: 100%;
+    }
+
+    .RecipeDetailContainerRight {
+        width: 100%;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+}
