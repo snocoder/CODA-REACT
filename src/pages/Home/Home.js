@@ -2,7 +2,6 @@ import React from 'react';
 import './style.css';
 
 import Request from '../../utils/request';
-import HomeSkeleton from "../../common/HomeSkeleton";
 import RecipeCard from "../../components/RecipeCard/RecipeCard";
 import SearchBar from "../../components/SearchBar/SearchBar";
 
@@ -48,7 +47,10 @@ export default class Home extends React.Component {
             <div className="HomeContainer">
                 {
                     this.state.loading ?
-                        <HomeSkeleton/>
+                        // <HomeSkeleton/>
+                        <div>
+                            Loading ...
+                        </div>
                         :
                         <div className="RecipeBody">
                             <SearchBar recipeList={this.state.recipeList}/>
@@ -60,7 +62,8 @@ export default class Home extends React.Component {
                                     <div className="RecipeList">
                                         {
                                             this.state.recipeList.map((recipe, index) => (
-                                                <RecipeCard recipe={recipe} recipeList={this.state.recipeList}/>
+                                                <RecipeCard recipe={recipe} recipeList={this.state.recipeList}
+                                                            key={index}/>
                                             ))
                                         }
                                     </div>

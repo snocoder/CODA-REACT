@@ -3,7 +3,6 @@ import './style.css';
 import {Link} from "react-router-dom";
 
 import heart_white from '../../assets/heart_white.png';
-import heart_red from '../../assets/heart_red.png';
 
 
 export default class RecipeCard extends React.Component {
@@ -43,7 +42,7 @@ export default class RecipeCard extends React.Component {
                                 {this.props.recipe ? this.props.recipe.name : null}
                             </div>
                             <div className="RecipeCardDescriptionLike">
-                                <img src={heart_white}/>
+                                <img src={heart_white} alt="like"/>
                             </div>
                         </div>
 

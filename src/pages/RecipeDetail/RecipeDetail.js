@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.css';
-import SearchBar from "../../components/SearchBar/SearchBar";
 import back_arrow from '../../assets/back_arrow.png';
 import {Link} from "react-router-dom";
 import star from '../../assets/star.png';
@@ -28,13 +27,12 @@ export default class RecipeDetail extends React.Component {
     render() {
         return (
             <div className="RecipeDetail">
-                {/*<SearchBar recipeList={this.props.location.data ? this.props.location.data.recipeList : []}/>*/}
                 <Link to={{
                     pathname: `/recipe`
                 }}
                       style={{textDecoration: 'none'}}>
                     <div className="RecipeDetailBack">
-                        <img src={back_arrow}/> Go Back
+                        <img src={back_arrow} alt="back"/> Go Back
                     </div>
                 </Link>
 
@@ -80,10 +78,10 @@ export default class RecipeDetail extends React.Component {
                         </div>
                         <div className="RecipeDetailContainerRightRating">
                             <span className="Rating">4/5</span>
-                            <img src={star}/>
-                            <img src={star}/>
-                            <img src={star}/>
-                            <img src={star}/>
+                            <img src={star} alt="start"/>
+                            <img src={star} alt="start"/>
+                            <img src={star} alt="start"/>
+                            <img src={star} alt="start"/>
                         </div>
                         <div className="RecipeDetailContainerRightDescriptionHeader">
                             Description
@@ -125,8 +123,8 @@ export default class RecipeDetail extends React.Component {
                             Favourite the recipe
                             {
                                 this.state.showWhiteHeart ?
-                                    <img src={heart_white}/>
-                                    : <img src={heart_red}/>
+                                    <img src={heart_white} alt="like"/>
+                                    : <img src={heart_red} alt="like"/>
                             }
                         </div>
                         <br/>
